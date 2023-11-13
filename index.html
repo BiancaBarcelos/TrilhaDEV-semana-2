@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrilhaDEV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+
+    <div id="titulo">
+        <h1>Floripa Mais Tec</h1>
+        <h2>TrilhaDEV</h2>
+        <h3>- Semana 2 -</h3>
+    </div>
+    <!-- Questão 1 -->
+    <section id="sessao1">
+        <div class="linha"></div>
+        <h2>Calculadora</h2>
+        <p>Uma Super Calculadora programada via JavaScript, exercício proposto na TrilhaDEV do evento Floripa Mais Tec</p>
+        
+     <p>Instruções de uso:</p>
+        <ol>
+            <li>Insira o primeiro número</li>
+            <li>Selecione a operador matemático</li>
+            <li>Insira o segundo número</li>
+            <li>Clique no botão "Calcular"</li>
+            <li>Logo abaixo aparecerá seu resultado</li>
+        </ol>
+        <form action="">
+            <label for="numero1"> O que você deseja Calcular? </label>
+            <input class="formulario" type="number" id="numero1" name="numero1" placeholder="Insira o primeiro número">
+            <select class="formulario" name="operadoresMatematicos" id="operadoresMatematicos">
+                <option value="adicao">+</option>
+                <option value="subtracao">-</option>
+                <option value="divisao">/</option>
+                <option value="multiplicacao">*</option>
+            </select>
+            <input class="formulario" type="number" id="numero2" name="numero2" placeholder="Insira o segundo número">
+            <button class="btn" onclick="calcularConta(event)" type="submit">Calcular</button>
+        </form>
+        <p id="frase"></p>
+    </section>
+    
+    <!-- Questão 2 -->
+    <section>
+        <div id="sessao2">
+            <div class="txt">
+                <h2>Evento Final de Ano</h2>
+                <form action="">
+                    <label for="idade">Preencha o campo abaixo, veja qual setor você participará do evento</label>
+                    <input class="formulario" type="number" id="idade" name="idade" placeholder="Qual a sua idade?">
+                    <button class="btn" onclick="direcionaSetor(event)" type="submit">Inscreva-se</button>
+                </form>
+                <h3 id="fraseIdade"></h3>
+            </div>
+            <div>
+                <img id="imagemEvento" src="assets/eventoFMT.png" alt="mapa do evento">
+            </div>
+        </div>
+    </section>
+
+    <!-- Questão 3 -->
+    <section>
+        <h2>Escrita de Operações Aritméticas</h2>
+
+        <label for="n1"> Escreva dois números entre 1 e 20 </label>
+        <input class="formulario" type="number" id="n1" name="n1" placeholder="Insira o primeiro número">
+        <input class="formulario" type="number" id="n2" name="n2" placeholder="Insira o segundo número">
+        <button class="btn" onclick="contaOperadores(event)" type="submit">Calcular</button>
+        <p id="fraseSoma"></p>
+        <p id="fraseSubtracao"></p>
+        <p id="FraseDivisao"></p>
+        <p id="FraseMultiplicacao"></p>
+        <p id="fraseExponenciacao"></p>
+        <p id="FraseResto"></p>
+    </section>
+
+    <!-- Questão 4 -->
+    <section id="sessao4">
+        <h2>Concatenação de Strings</h2>
+        <p>Primeiro nos perguntamos o que é Concatenação e o que é String. Concatenação é juntar em uma sentença conteúdo de duas strings. E String nada mais é que sequência de caracteres, ou seja, um Texto seja uma palavra ou frase.</p>
+        <p>Por via código de JavaScript, criei duas variáveis de texto e depois uma terceira para realizar a concatenação, desta forma formou essa frase:</p>
+        <p id="fraseConcatenacao"></p>
+    </section>
+
+
+     <!-- Logo-->
+     <div class="logo_bianca">
+        <img src="assets/logo.png" alt="">
+        <p>Bianca Barcelos</p>
+    </div>      
+
+    <script src="script.js"></script>
+</body>
+</html>

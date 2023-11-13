@@ -1,0 +1,115 @@
+body {
+    background-color: darkslategray;
+    color: antiquewhite;
+}
+p, li, label{
+    font-size: 20px;
+}
+h2 {
+    color: rgb(238, 202, 155);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+section {
+    border-bottom: 1px solid  rgb(13, 56, 56);
+    margin: 30px;
+}
+.linha {
+    border-top: 1px solid  rgb(13, 56, 56);
+    margin-bottom: 16px;
+}
+#titulo {
+    margin-top: 30px;
+}
+#titulo h1, #titulo h2, #titulo h3{
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+}
+
+/*Questão 1*/
+#sessao1 {
+    margin-top: 50px;
+}
+#sessao1 h2{
+    text-align: start;
+}
+.formulario {
+    height: 27px;
+    outline: 0;
+    border-radius: 5px;
+    border: none;
+    padding: 1px 10px;
+    color: rgb(13, 56, 56);
+    background-color: rgba(245, 237, 226, 1);
+}
+select.formulario {
+    height:29px;
+}
+.btn {
+    height: 29px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    color: rgb(13, 56, 56);
+    background-color: rgba(245, 237, 226, 1);
+}
+.btn:hover {
+    background-color: rgb(13, 56, 56);
+    color: antiquewhite;
+}
+
+/*Questão 2*/
+
+#sessao2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+#sessao2 form {
+    width: 700px;
+}
+
+#sessao2 form label{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.txt {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#imagemEvento {
+    width: 300px;
+    margin-bottom: 30px;
+    border: 2px rgba(245, 222, 179, 0.425) solid;
+    border-radius: 10px;
+}
+
+/*Questão 4*/
+
+#sessao4 {
+    text-align: end;
+}
+
+/* Logo */
+.logo_bianca {
+    gap: 5px;
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    color: antiquewhite;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.logo_bianca img{
+    width: 40px;
+    filter: brightness(300);
+}
